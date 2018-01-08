@@ -21,6 +21,12 @@ config CMD_ESBC_VALIDATE
 	    esbc_validate - validate signature using RSA verification
 	    esbc_halt - put the core in spin loop (Secure Boot Only)
 
+config USB_TCPC
+	bool "USB Typec port controller simple driver"
+	default n
+	help
+	  Enable USB type-c port controller (TCPC) driver
+
 config VOL_MONITOR_LTC3882_READ
 	depends on VID
 	bool "Enable the LTC3882 voltage monitor read"
