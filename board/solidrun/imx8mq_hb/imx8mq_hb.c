@@ -306,5 +306,8 @@ int board_late_init(void)
 	init_usb_clk(0);
 	init_usb_clk(1);
 
+	imx8m_gpc_power(10, false);
+	imx8m_gpc_power(1, false);
+
 	return 0;
 }
